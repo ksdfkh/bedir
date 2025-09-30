@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+  background: #081b29;  
+  color: #ededed;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px ;
+    background: #01324d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+img {
+    width: 50%;
+}
+.logo {
+    font-size: 25px ;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.navbar a {
+    font-size:18px  ;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 3s;
+}
+.navbar a:hover
+{
+    color: #00abf0;
+}
+.navbar  a.active {
+    color: #00abf0;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+}
+
+.peag {
+    background: #081b29;
+}
+ ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+li {
+    
+    border-radius:14px ;
+    background-color: rgba(14, 100, 131, 0.75);
+    backdrop-filter:blur(4px);
+    padding: 1rem 4rem;
+}
+ li img {
+   
+    width: 200PX;
+    height: 200PX;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+ li :hover {
+    transform: scale(1.5);
+    
+}
+.hover {
+    margin-left: 20px;
+
+}
+    .contact{ display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20px;}
+   
+
+
+.contact h3, .contact a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+.footer {
+    color: #eeeeee;
+    padding: 2rem;
+  text-align:center;
+}
+@media(max-width:1023px) {
+    header{
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .heroimg {
+        width: 400px;
+    }
+    .name, .title {
+        font-size: 2rem;
+    }
+    .arrow {
+        display: none;
+    }
+    .aboutme {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .textcontainer  {
+        align-items: center;
+        margin: 0rem 5rem;
+        gap: 1rem;
+    }
+    .Aboutname, .Abouttitle{
+        font-size: 2rem;
+    }   
+    .light {
+        width: 60px;
+    }
+    .aboutmeimg {
+        width: 400px;
+    }
+    .works {
+        padding: 0;
+    }
+    .workscontainer {
+        padding: 5rem 0rem;
+        gap: 3rem;
+    }
+    .projectTitle {
+        margin-left: 1rem;
+    }
+    .works ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contactcontainer {
+        margin: 10rem 5rem;
+        gap: 2rem;
+    }
+    .contact {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+    }
+    
+}
