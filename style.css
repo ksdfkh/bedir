@@ -5,6 +5,8 @@
     font-family: 'poppins', sans-serif;
 }
 body {
+    
+    margin: 7px;
   background: #081b29;  
   color: #ededed;
 }
@@ -56,6 +58,7 @@ img {
     background: #081b29;
 }
  ul {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -72,20 +75,12 @@ li {
 }
  li img {
    
-    width: 200PX;
-    height: 200PX;
-    object-fit: contain;
-    transition: transform 0.2s;
-}
- li :hover {
-    transform: scale(1.5);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     
 }
-.hover {
-    margin-left: 20px;
-
-}
-    .contact{ display: flex;
+ .contact{ display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 5rem;
@@ -102,9 +97,16 @@ li {
     padding: 2rem;
   text-align:center;
 }
+button {
+display: flex;
+margin: 20px;
+}
 @media(max-width:1023px) {
-    header{
-        margin-left: 1rem;
+
+}
+
+    .header {
+        margin-left: 0rem;
         margin-right: 1rem;
 
     }
@@ -166,5 +168,16 @@ li {
         gap: 1rem;
         margin-right: 0;
     }
+.prograph {
+    font-size: large;
+    margin-left:25% ;
     
+}
+h2 {
+    margin-left: 50%;
+}
+.hero {
+    background-color: #00abf0;
+    box-shadow: none;
+    box-shadow: none;
 }
